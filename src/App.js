@@ -42,13 +42,11 @@ class App extends Component {
       (contact) => contact.name === newContact.name
     );
 
-    if (nameCheck) {
-      alert(`${newContact.name} is already in contacts`);
-    } else {
-      this.setState((prevState) => ({
-        contacts: [...prevState.contacts, newContact],
-      }));
-    }
+    nameCheck
+      ? alert(`${newContact.name}, is already in contacts`)
+      : this.setState((prevState) => ({
+          contacts: [...prevState.contacts, newContact],
+        }));
 
     e.target[0].value = "";
     e.target[1].value = "";
