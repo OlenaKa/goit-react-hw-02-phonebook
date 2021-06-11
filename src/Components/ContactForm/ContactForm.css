@@ -1,0 +1,14 @@
+form {
+  display: block;
+  text-align: center;
+}
+input {
+  display: block;
+  margin: auto;
+}
+
+.name-label,
+.number-label {
+  display: block;
+  margin: 10px;
+}

@@ -1,0 +1,9 @@
+.contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-contact-btn {
+  display: block;
+  margin-left: 15px;
+}
